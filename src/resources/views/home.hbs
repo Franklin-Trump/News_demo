@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-12 col-lg-8">
+
+        {{#each item}}
+        <div class="row mt-3 news__item">
+
+            <div class="col-12">
+                <p>{{this.pubDate}}</p>
+                <h3 href="{{this.link}}"  class="">{{this.title}}</h3>
+            </div>
+            <div href="{{this.link}}" class="col-12">               
+                <p>{{{this.content}}}</p>
+            </div>
+
+        </div>
+        {{/each}}
+
+    </div>
+    <div class="col-12 col-lg-4 d-none d-lg-block">
+
+    </div>
+
+</div> 
